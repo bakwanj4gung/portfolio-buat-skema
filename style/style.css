@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: Poppins;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+html {
+    scroll-behavior: smooth; /* tambahan biar mulus pas dipencet navigasinya*/
+}
+/* Navbar */
+.container {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a{ /* lihat selectornya */
+    font-family: Agbalumo;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+.logo a:hover { /* tambahan hover */
+    color: #7e74f1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Poppins;
+}
+
+nav ul li a button {
+    padding: 10px 25px;
+    background-color: #fbfbfb;
+    border: 2px solid lightgray;
+    cursor: pointer;
+}
+
+nav ul li a button:hover {
+    box-shadow: 6px 7px 22px 0px rgba(0,0,0,0.1);
+}
+/* End of Navbar */
+
+/* Hero */
+.main-container {
+    width: 1320px;
+    height: 620px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.container-hero {
+    display: flex;
+    align-items: center;
+}
+
+.profile , .image {
+    width: 50%;
+}
+
+.profile {
+    padding-left: 10px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    font-size: 16px;
+    color: #656d72;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-weight: 400;
+}
+
+.profile h1 {
+    font-size: 50px;
+    margin-top: 0;
+}
+
+.profile h1 span {
+    color: #7e74f1;
+}
+
+.profile p {
+    font-size: 20px;
+}
+
+.image img {
+    width: 500px;
+}
+/* End of hero */
+
+/* Services */
+#services {
+    padding: 80px;
+    margin: 0;
+}
+
+.main-container-services {
+    width: 1320px;
+    margin: auto;
+}
+
+.main-container-services h4, .main-container-services h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.container-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.one-service {
+    background-color: #fcf5eb;
+    padding: 50px 30px;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.one-service .icon {
+    background-color: antiquewhite;
+    width: 60px;
+    height: 60px; /* tambahan biar bentuk icon service kotak */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End of Services */
+
+/* Portfolios */
+.main-container-portfolios {
+    width: 1320px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.container-portfolios {
+    display: grid; /* display: grid lebih stabil ukurannya daripadaa flex. penjelasan = https://chat.openai.com/share/ec6430cf-bcff-47ea-8543-38a96e5d3b6a*/
+    grid-template-columns: 1fr 1fr 1fr; /* ini cuma dipakai ketika display: grid */
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.one-portfolio {
+    background-color: #fcf5eb;
+    padding: 50px 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.one-portfolio .icon {
+    background-color: antiquewhite;
+    width: 70%;
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+
+.one-portfolio .icon img {
+    object-fit: cover;
+    width: 100%;
+}
+/* End of portfolios */
+
+/* Education & Skills */
+#education-skills{
+    padding: 70px;
+    margin-top: 100px;
+}
+
+.main-container-education {
+    width: 1320px;
+    margin: auto;
+}
+
+.container-education {
+    display: flex;
+    gap: 30px;
+}
+
+.education , .skills {
+    width: 50%;
+}
+
+.education table ul li {
+    list-style: none;
+}
+
+.education table .school {
+    line-height: 10px;
+    padding-top: 10px;
+}
+
+.education table ul li:nth-child(2) {
+    color: #656d72;
+    font-size: 14px;
+}
+
+.skills {
+    margin-top: 50px;
+}
+
+.skills div {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px
+}
+/* End of Education & Skills */
+
+/* Contacts */
+#contacts {
+    margin-bottom: 80px;
+}
+
+.main-container-contacts {
+    width: 1320px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    gap: 30px;
+}
+
+.main-container-contacts form, .main-container-contacts .address{
+    width: 50%;
+}
+
+.main-container-contacts form input, .main-container-contacts form textarea {
+    width: 70%;
+    padding: 13px;
+    border-radius: 20px;
+    border: none;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.main-container-contacts form textarea {
+    height: 150px;
+}
+
+.main-container-contacts form button {
+    width: 75%;
+    padding: 11px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 25px;
+    background-color: #7e74f1;
+    font-weight: 700;
+    font-size: 15px;
+    color: aliceblue;
+}
+
+.main-container-contacts form button:hover {
+    background-color: #fbfbfb;
+    color: #7e74f1;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-me .details {
+    display: flex;
+    gap: 10px;
+    background-color: #fcf5eb;
+    border-radius: 15px;
+    width: 100%;
+    padding: 10px;
+}
+
+.contact-me .details .icon {
+    display: flex;
+    align-items: center;
+}
+
+.contact-me .details .desc h5, .details .desc p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-me .details .icon svg {
+    width: 50px;
+
+}
+
+/* End of Contacts */
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+footer .social-media {
+    display: flex;
+    gap: 40px;
+}
+
+footer .social-media .icon svg:hover {
+    fill: #7e74f1; /* untuk mewarnai icon social media */
+}
+
+footer .copyright p {
+    margin: 0;
+}
+/* End of Footer */
